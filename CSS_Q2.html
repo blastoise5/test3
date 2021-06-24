@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            margin: 1px;
+            padding: 1px;
+            border: 50px rgb( 69, 70, 62)solid;
+        }
+        header{
+            border-bottom: 1px solid black;
+        }
+        footer{
+            border-top: 1px solid black;
+          
+        }
+        header, footer{
+            height: 16.8vh;
+            background-color: rgb(156, 153, 102);
+            color: bisque;
+        }
+        section{
+            width: 35%;
+            float: left;
+            height: 50vh;
+            background-color: rgb(212, 195, 123);
+        }
+        .right{
+            width: 65%;
+            float: right;
+            height: 50vh;
+            background-color: rgb(255, 226, 166);
+        }
+        .main-layout::after{
+            content:"";
+            clear: both;
+            display: table;
+        }
+        p{
+            padding: 30px;
+            font-size: 8vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <header><p>Two column layout</p></header>
+    
+    <div class="main-layout">
+        <section></section>
+        <aside class="right"></aside>
+    </div>
+    <footer></footer>
+    </div>
+</body>
+</html>
+    
+</body>
+</html>

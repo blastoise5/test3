@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            margin: 1px;
+            padding: 1px;
+            border: 50px rgb( 69, 70, 62)solid;
+        }
+        header{
+            border-bottom: 1px solid black;
+        }
+        footer{
+            border-top: 1px solid black;
+        }
+        header, footer{
+            background-color: rgb(156, 153, 102);
+            height: 16.8vh;
+            color: bisque;
+        }
+        .left{
+            float: left;
+            width: 20%;
+            height: 50vh;
+            background-color: rgb(212, 195, 123);
+        }
+        .middle{
+            float: left;
+            width: 60%;
+            height: 50vh;
+            background-color: rgb(255, 226, 166);
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+        }
+        .right{
+            float: left;
+            width: 20%;
+            height: 50vh;
+            background-color: rgb(212, 195, 123);
+        }
+        .main-layout::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        p{
+            padding: 30px;
+            font-size: 8vh;
+        }
+    </style>
+</head>
+<body>
+  
+     <div class="container">
+        <header> <p>
+            Three column layout with vertical borders
+        </p></header>
+        <div class="main-layout">
+            <section>
+                <aside class="left"></aside>
+                <aside class="middle"></aside>
+                <aside class="right"></aside>
+            </section>
+        </div>
+       <footer></footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            display: inline-block;
+        }
+
+        h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 27px;
+        }
+        .attribute{
+            float: left;
+            width: 12%;
+            margin-top: 6px;
+            clear: left;
+            color: rgb(121, 117, 117);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+        }
+        .inputs{
+            width: 40%;
+            margin-top: 10px;
+        }
+        input[type=submit]{
+            background-color: rgb(49, 49, 49);
+            border-radius: 6px;
+            color: white;
+            padding: 3px 6px;
+            font-size: 15px;
+        }
+        .container {
+            height: 60vh;
+            width: 100vw;
+            padding: 30px 0 30px 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Course Details</h1>
+        <br>
+        <form action="thankyou.gif">
+            <div class="row">
+                <div class="attribute">
+                    <label for="line1">Address Line 1</label>
+                </div>
+                <div class="inputs">
+                </div>
+                <input type="text">
+            </div>
+            
+            <br>
+
+            <div class="row">
+                <div class="attribute">
+                    <label for="line2">Line 2</label>
+                </div>
+                <div class="inputs">
+                    <input type="text">
+                </div>
+            </div>
+
+            <br>
+            
+            <div class="row">
+                
+                <div class="attribute">
+                    <label for="line3">Line 3</label>
+                </div>
+                <div class="inputs">
+                <input type="text">
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+            <div class="attribute">
+                <label for="town">Town<label>
+                </div>
+                <div class="inputs">
+                    <input type="text">
+                </div>
+            </div>
+
+            <br>
+            
+            <div class="row">
+                <div class="attribute">
+                    <label for="postcode">Postcode:</label>
+                </div>
+                <div class="inputs">
+                    <input type="number">
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+                <div class="attribute">
+                    <label for="date">Date:</label>
+                </div>
+                <div class="inputs">
+                    <input type="date">
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+                <div class="attribute">
+                    <label for="time">Time:</label>
+                </div>
+                <div class="inputs">
+                    <input type="time">
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <input type="submit" value="SUBMIT">
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q5</title>
+    <style>
+        .container{
+            padding: 10px;
+        }
+        .create {
+            background: rgb(255, 255, 255);
+        }
+
+        .create,
+        .personal_data,
+        .security_data,
+        .submit_data {
+            padding: 16px;
+        }
+
+        .personal_data,
+        .security_data,
+        .submit_data {
+            background-image: linear-gradient(rgba(255, 240, 240, 0.527), rgb(255, 246, 231));
+            border-top: 0.5px solid black;
+            font-weight: 600;
+        }
+
+        select {
+            padding: 4px;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        .inputs {
+            margin-bottom: 15px;
+        }
+        input{
+            border-top: 2px solid black;
+        }
+
+        .help {
+            color: rgb(119, 109, 109);
+        }
+
+        input[type=submit] {
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            background-image: linear-gradient(rgb(180, 255, 42), rgb(0, 182, 9));
+            padding: 12px 20px;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="create">
+            <form action="gif/registered.gif">
+                <h1><b>Create an Account</b></h1>
+                <p>Just fill in the information below and let us know if you <a href="#">need help.</a></p>
+        </div>
+        <div class="personal_data">
+            <h2>Tell us about yourself</h2>
+            <div class="name">
+                <label for="fname">First Name</label>
+            </div>
+            <div class="inputs">
+                <input type="text">
+            </div>
+
+            <div class="name">
+                <label for="lname">Last Name</label>
+            </div>
+            <div class="inputs">
+                <input type="text">
+            </div>
+
+            <div class="name">
+                <label for="email">Email Address</label>
+            </div>
+            <div class="inputs">
+                <input type="email">
+            </div>
+
+            <p class="help">We will not sell or spam your email address.</p>
+
+            <div class="name">
+                <label for="gender">Gender</label>
+            </div>
+            <div class="inputs">
+                <select name="Gender" id="gender">
+                    <option value="">--Select One--</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="name">
+                <label for="country">I live in</label>
+            </div>
+            <div class="inputs">
+                <select name="Country" id="country">
+                    <option value="india">India</option>
+                    <option value="united kingdom">United Kingdom</option>
+                    <option value="usa">USA</option>
+                    <option value="russia">Russia</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="name">
+                <label for="postal_code">Postal Code</label>
+            </div>
+            <div class="inputs">
+                <input type="text" style="width: 85px;">
+            </div>
+        </div>
+        <div class="security_data">
+            <h2>Select an ID and password</h2>
+            <div class="name">
+                <label for="user_id">User ID</label>
+            </div>
+            <div class="inputs">
+                <input type="text">
+            </div>
+            <p class="help">5 characters minimum.</p>
+            <div class="name">
+                <label for="passwor">Password</label>
+            </div>
+
+            <div class="inputs">
+                <input type="password">
+            </div>
+            <p class="help">5 characters minimum, must include a special character. Example: s@mple</p>
+
+            <div class="name">
+                <label for="retype_password">Retype Password</label>
+            </div>
+            <div class="inputs">
+                <input type="password">
+            </div>
+        </div>
+        <div class="submit_data">
+            <input type="submit" value="Create Account"> | <a href="CSS5.html">Cancel</a>
+        </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
